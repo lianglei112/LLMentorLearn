@@ -22,6 +22,8 @@
         <module>springai</module>
         <module>mcp/mcp-server-sse</module>
         <module>mcp/mcp-server-stdio</module>
+        <module>mcp/mcp-server-streamable</module>
+        <module>mcp/mcp-client</module>
     </modules>
 
     <properties>
@@ -30,6 +32,8 @@
         <spring.ai.version>1.1.0</spring.ai.version>
         <fastjson.version>2.0.43</fastjson.version>
         <spring.ai.alibaba.version>1.1.2.0</spring.ai.alibaba.version>
+        <!-- 统一配置API Key ，记得改成你自己的-->
+        <dashscope.api.key>sk-db77de3431244a77b75940239d143f3f</dashscope.api.key>
     </properties>
 
     <dependencyManagement>
@@ -48,16 +52,27 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
-    <repositories>
-        <!-- 阿里云镜像，能下载所有 Spring AI 1.1.0 -->
-        <repository>
-            <id>central</id>
-            <url>https://maven.aliyun.com/repository/public</url>
-        </repository>
-    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- Lombok 支持 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 
     <build>
         <resources>

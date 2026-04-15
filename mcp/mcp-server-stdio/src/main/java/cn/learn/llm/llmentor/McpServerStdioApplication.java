@@ -1,4 +1,4 @@
-package cn.learn.llm.llmentor.llmentor.llmentor;
+package cn.learn.llm.llmentor;
 
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;
@@ -9,13 +9,13 @@ import org.springframework.context.annotation.Bean;
 /**
  * @author lianglei
  * @version 1.0
- * @date 2026/4/14 20:40
+ * @date 2026/4/14 21:45
  */
 @SpringBootApplication
-public class McpServerSseApplication {
+public class McpServerStdioApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(McpServerSseApplication.class, args);
+        SpringApplication.run(McpServerStdioApplication.class, args);
     }
 
     @Bean

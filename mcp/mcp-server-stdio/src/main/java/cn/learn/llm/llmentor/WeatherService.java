@@ -1,4 +1,4 @@
-package cn.learn.llm.llmentor.llmentor.llmentor;
+package cn.learn.llm.llmentor;
 
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Service;
@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service;
 /**
  * @author lianglei
  * @version 1.0
- * @date 2026/4/14 20:47
+ * @date 2026/4/15 15:24
  */
 @Service
 public class WeatherService {
 
-    @Tool(name = "getWeather", description = "根据城市名称查询天气信息")
+    @Tool(description = "根据城市名称查询天气信息")
     public String getWeather(String city) {
         if (city == null) {
             return "请提供城市名称";

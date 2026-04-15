@@ -1,4 +1,4 @@
-package cn.learn.llm.llmentor.llmentor.llmentor.llmentor;
+package cn.learn.llm.llmentor;
 
 import java.io.IOException;
 import java.net.URI;

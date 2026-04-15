@@ -1,4 +1,4 @@
-package cn.learn.llm.llmentor.llmentor.llmentor.llmentor.controller;
+package cn.learn.llm.llmentor.controller;
 
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.ai.chat.client.ChatClient;
