@@ -1,4 +1,4 @@
-package cn.learn.llm.llmentor.llmentor.llmentor.controller;
+package cn.learn.llm.llmentor.llmentor.llmentor.llmentor.controller;
 
 import com.alibaba.cloud.ai.dashscope.chat.DashScopeChatOptions;
 import org.springframework.ai.chat.client.ChatClient;

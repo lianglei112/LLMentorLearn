@@ -1,4 +1,4 @@
-package cn.learn.llm.llmentor.llmentor;
+package cn.learn.llm.llmentor.llmentor.llmentor;
 
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;

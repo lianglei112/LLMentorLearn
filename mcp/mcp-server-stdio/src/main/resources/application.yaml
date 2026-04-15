@@ -1,3 +1,6 @@
+server:
+  port: 8083
+
 spring:
   main:
     web-application-type: none
@@ -11,9 +14,6 @@ spring:
         stdio: true
         enabled: true
         type: SYNC
-
-server:
-  port: 8083
 
 logging:
   level:

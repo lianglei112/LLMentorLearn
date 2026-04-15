@@ -8,10 +8,9 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>mcp-server-stdio</artifactId>
+    <artifactId>mcp-server-streamable</artifactId>
     <packaging>jar</packaging>
-
-    <name>mcp-server-stdio</name>
+    <name>mcp-server-streamable</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -20,20 +19,34 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- MCP相关依赖 -->
+        <!-- Lombok 支持 -->
         <dependency>
-            <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-starter-mcp-server-webmvc</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.learn.llm</groupId>
+            <artifactId>mcp-server-stdio</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.learn.llm</groupId>
+            <artifactId>mcp-server-streamable</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

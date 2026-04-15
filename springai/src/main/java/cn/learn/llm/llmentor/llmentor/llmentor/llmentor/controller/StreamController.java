@@ -1,4 +1,4 @@
-package cn.learn.llm.llmentor.llmentor.llmentor.controller;
+package cn.learn.llm.llmentor.llmentor.llmentor.llmentor.controller;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
