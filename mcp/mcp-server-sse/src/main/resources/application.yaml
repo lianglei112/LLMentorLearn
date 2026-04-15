@@ -1,0 +1,28 @@
+server:
+  port: 8084
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+#    context-path: /test
+
+spring:
+  application:
+    name: mcp-weather-sse
+  ai:
+    mcp:
+      server:
+        name: weather-sse-server
+        version: 1.0.0
+        stdio: true
+        enabled: true
+        type: SYNC
+        capabilities:
+          tool: true
+          resource: false
+          prompt: false
+          completion: false
+        sse-message-endpoint: /mcp/messages   # 客户端向 MCP Server 发送指令（"写信"）
+        sse-endpoint: /sse                    # 客户端订阅服务器推送消息（"听收音机"）
+        #        base-url: /test

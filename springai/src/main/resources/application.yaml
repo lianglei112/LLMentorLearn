@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: LLMentorLearn_SpringAI
+  ai:
+    dashscope:
+      api-key: sk-db77de3431244a77b75940239d143f3f
+server:
+  port: 8088
