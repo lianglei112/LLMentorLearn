@@ -23,29 +23,29 @@ spring:
 
     # pgvector数据库数据源配置
   datasource: # 数据源配置
-    url: jdbc:postgresql://192.168.43.54:5433/rag_test # 记得改成你自己的
+    url: jdbc:postgresql://@database.connection.addr@:5433/rag_test # 记得改成你自己的
     #    url: jdbc:postgresql://192.168.0.121:5433/rag_test # 记得改成你自己的
     username: pgvector # 记得改成你自己的
     password: pgvector666 # 记得改成你自己的
     # elasticsearch 数据库配置
   elasticsearch:
-    uris: http://192.168.43.54:9200
+    uris: http://@database.connection.addr@:9200
     #    uris: http://192.168.0.121:9200
     # neo4j 数据库配置
   neo4j:
-    uri: bolt://192.168.43.54:7687
+    uri: bolt://@database.connection.addr@:7687
     #    uri: bolt://192.168.0.121:7687
     authentication:
       username: neo4j
       password: neo4j666
 
 minio:
-  url: http://192.168.43.54:9000 # 记得改成你自己的
+  url: http://@database.connection.addr@:9000 # 记得改成你自己的
   #  url: http://192.168.0.121:9000 # 记得改成你自己的
   accessKey: minioadmin # 记得改成你自己的
   secretKey: minioadmin # 记得改成你自己的
   bucketName: rag-test # 记得改成你自己的
-  endpoint: http://192.168.43.54:9000 # 记得改成你自己的
+  endpoint: http://@database.connection.addr@:9000 # 记得改成你自己的
 #  endpoint: http://192.168.0.121:9000 # 记得改成你自己的
 
 server:

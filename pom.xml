@@ -37,6 +37,7 @@
         <spring.ai.alibaba.version>1.1.2.0</spring.ai.alibaba.version>
         <!-- 统一配置API Key ，记得改成你自己的-->
         <dashscope.api.key>sk-7cce5d692dda4b64b4aa1e9d7ff1452b</dashscope.api.key>
+        <database.connection.addr>192.168.43.240</database.connection.addr>
     </properties>
 
     <dependencyManagement>

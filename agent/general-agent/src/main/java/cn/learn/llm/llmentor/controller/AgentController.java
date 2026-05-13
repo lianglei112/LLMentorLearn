@@ -33,7 +33,6 @@ public class AgentController {
 
     @GetMapping("/react")
     public Flux<String> reactAgentCall(@RequestParam("question") String question) {
-
         ToolCallback[] toolCallbacks = ToolCallbacks.from(new WeatherService(), new SearchService());
 
         SimpleRecActAgent actAgent = SimpleRecActAgent.builder()
@@ -47,8 +46,7 @@ public class AgentController {
 
         return (Flux<String>) actAgent.steam(question)
                 .doOnNext(System.out::println)
-                .doOnComplete(() -> System.out.println("\n\n=== 流式输出全部完成 ==="))
-                .subscribe();
+                .doOnComplete(() -> System.out.println("\n\n=== 流式输出全部完成 ==="));
     }
 
 }

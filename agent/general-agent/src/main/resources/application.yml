@@ -27,7 +27,7 @@ spring:
           temperature: 0.7
           maxTokens: 5000
   datasource:
-    url: jdbc:mysql://192.168.43.54:3306/llm_mentor?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://@database.connection.addr@:3306/llm_mentor?useSSL=false&serverTimezone=UTC
     username: root
     password: 89008900
     driver-class-name: com.mysql.cj.jdbc.Driver
